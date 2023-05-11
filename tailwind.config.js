@@ -20,6 +20,7 @@ export default {
 				DEFAULT: '#4EA8DE',
 				dark: '#1E6F9F',
 			},
+			danger: '#E25858',
 		},
 		fontFamily: {
 			sans: "'Inter', sans-serif",
@@ -28,7 +29,17 @@ export default {
 			lineHeight: {
 				normal: 1.4,
 			},
+			container: {
+				center: true,
+				padding: {
+					DEFAULT: '16px',
+					md: 0,
+				},
+				screens: {
+					md: '736px',
+				},
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/forms')],
 }
